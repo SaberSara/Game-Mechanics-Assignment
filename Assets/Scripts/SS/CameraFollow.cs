@@ -17,7 +17,7 @@ public class CameraFollow : MonoBehaviour
 
     [Header("Watch only (Debug) :")] 
     private Vector3 velocity; 
-
+    
     void LateUpdate()
     {
         cameraTransform.position = Vector3.SmoothDamp(cameraTransform.position, offset+target.position, ref velocity, smoothTime, maxSpeed);
