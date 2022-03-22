@@ -1,7 +1,9 @@
 # Game-Mechanics-Assignment
 A mini game developed for the game mechanics assignment (and beyond) mentored by Marc Z. and Stefan A.
 
-## Mechanics : in Line (restricted) sliding
+## Mechanics : 
+
+in Line (restricted) sliding
 
 #### -Mechanic 1 :
 Sliding with right or left arrow keys to lines
