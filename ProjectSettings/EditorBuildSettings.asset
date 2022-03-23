@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MainScene.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/1ArrowsControlsScene.unity
+    guid: 58a75b9a89e15c04e9ad1cebbf728e2a
+  - enabled: 1
+    path: Assets/Scenes/2MouseTapScene.unity
+    guid: f491d5b9813ae2c46806a4ed305d6db8
   m_configObjects: {}
