@@ -27,7 +27,7 @@ public class SlideOnSwipe : MonoBehaviour
         {
             MoveLane(1);
         }
-        
+
     }
 
       private void MoveLane(int direction)

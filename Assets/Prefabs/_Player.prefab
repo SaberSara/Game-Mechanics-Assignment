@@ -140,7 +140,7 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.18039216, g: 0.21568629, b: 0.40000004, a: 1}
+      key0: {r: 0.75294125, g: 0.20784315, b: 0.19607845, a: 1}
       key1: {r: 1, g: 1, b: 1, a: 0}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
@@ -185,7 +185,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3736369598840685849}
+  - component: {fileID: 3736369598345901098}
   - component: {fileID: 3736369598345901096}
+  - component: {fileID: 3736369598345901097}
   m_Layer: 0
   m_Name: _Player
   m_TagString: Untagged
@@ -211,7 +213,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3736369598345901096
+--- !u!114 &3736369598345901098
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -220,13 +222,39 @@ MonoBehaviour:
   m_GameObject: {fileID: 3736369598840685848}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9e24950ef907a04f847d3d35146c4ce, type: 3}
+  m_Script: {fileID: 11500000, guid: 4ceed8ed96f248eeaead5204d33bcf09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 7
   smoothTime: 0.3
+  characterAnimator: {fileID: 3641253270853318940}
   currentVeclocity: {x: 0, y: 0, z: 0}
   activeLane: 0
+  characterDirection: {x: 0, y: 0, z: 0}
+--- !u!114 &3736369598345901096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3736369598840685848}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9e24950ef907a04f847d3d35146c4ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3736369598345901097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3736369598840685848}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d348bdf5979923144965c6d325b7f634, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &3736369599202426204
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -296,6 +324,11 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: 72a2b81b99681604494fc310b84f94e1, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 55776efecb0cd134ea5f418c2f97a705, type: 3}
+--- !u!95 &3641253270853318940 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 95161444847813696, guid: 55776efecb0cd134ea5f418c2f97a705, type: 3}
+  m_PrefabInstance: {fileID: 3736369599202426204}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3734622417839304398 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4023215848608658, guid: 55776efecb0cd134ea5f418c2f97a705, type: 3}
